@@ -68,7 +68,7 @@ TEMPLATES = [
         },
     },
 ]
-
+    
 WSGI_APPLICATION = 'islamic_institude.wsgi.application'
 
 

@@ -1,25 +1,35 @@
 {% load static %}
+<style>
+    .container img{
+        width: 30px;
+        height: 30px;
+        margin-left:-90px;
+    }
+</style>
+
+
 <!-- Main header start -->
 <header class="top-header th-2 top-header-bg">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
+
             <a class="navbar-brand company-logo" href="index.html">
-                <img src="{% static 'img/logos/black-logo.png' %}" alt="logo">
+                <img src="{% static 'images/logo.jpg' %}" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="fa fa-bars"></span>
             </button>
             <div class="navbar-collapse collapse w-100" id="navbar">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+            <ul class="navbar-nav ml-auto" style="margin-left: -50px;" >
+                <li class="nav-item" >
                     <a class ="nav-link active"
                         class="nav-link"
-                        href="#">
+                        href="#" >
                         Home
                         </a>
                     </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-left:-30px;">
           About
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
@@ -57,9 +67,8 @@
       <li class="nav-item">
         <a class ="nav-link active" class="nav-link" href="#">Lighthouse Mentoring</a>
       </li>
-      <li class="nav-item" style=" margin: 5px; background-color: red">
-
-      <a href="https://sapienceinstitute.org/donate/" class="action_button top-bar-right-button ">Donate</a>
+      <li class="nav-item" style="margin-right: -90px;">
+        <a class ="nav-link active" class="nav-link" href="#">donate</a>
       </li>
       </ul>
             </div>
